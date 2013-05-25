@@ -1,0 +1,223 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+		<title>Work Space</title>
+		<link rel="shortcut icon" href="images/Favicon.ico">
+		<link rel="icon" type="image/jpg" href="images/Favicon.jpg">
+		<style type="text/css">
+
+			#top 
+			{
+				position:absolute;
+				left:10px;
+				top:15px;
+				width:321px;
+				height:148px;
+				z-index:1;
+			}
+
+			#A1 
+			{
+				position:absolute;
+				left:10px;
+				top:241px;
+				width:378px;
+				height:272px;
+				z-index:2;
+			}
+
+			#dessin 
+			{
+				position:absolute;
+				left:1432px;
+				top:241px;
+				width:380px;
+				height:260px;
+				z-index:3;
+			}
+
+			#hoverDessin
+			{
+				position:absolute;
+				left:1432px;
+				top:241px;
+				width:380px;
+				height:260px;
+				z-index:10;
+				display:none;
+			}
+
+			#B1 
+			{
+				position:absolute;
+				left:10px;
+				top:865px;
+				width:171px;
+				height:157px;
+				z-index:4;
+			}
+
+			#temps 
+			{
+				position:absolute;
+				left:536px;
+				top:865px;
+				width:189px;
+				height:154px;
+				z-index:5;
+			}
+
+			#hoverTemps
+			{
+				position:absolute;
+				left:536px;
+				top:865px;
+				width:189px;
+				height:154px;
+				z-index:11;
+			}
+
+			#B3 
+			{
+				position:absolute;
+				left:720px;
+				top:865px;
+				width:266px;
+				height:118px;
+				z-index:6;
+			}
+
+			#C
+			{
+				position:absolute;
+				left:10px;
+				top:1017px;
+				width:187px;
+				height:155px;
+				z-index:7;
+			}
+
+			#D1
+			{
+				position:absolute;
+				left:10px;
+				top:1239px;
+				width:136px;
+				height:144px;
+				z-index:8;
+			}
+
+			#journal
+			{
+				position:absolute;
+				left:1432px;
+				top:1239px;
+				width:248px;
+				height:125px;
+				z-index:9;
+			}
+
+			#hoverJournal 
+			{
+				position:absolute;
+				left:1432px;
+				top:1239px;
+				width:248px;
+				height:125px;
+				z-index:12;
+			}
+
+
+		</style>
+
+		<script>
+
+			function hoverDessin()
+			{
+			document.getElementById("dessin").style.display = 'none';
+			document.getElementById("hoverDessin").style.display = 'block';
+			}
+
+			function hoverTemps()
+			{
+			document.getElementById("temps").style.display = 'none';
+			document.getElementById("hoverTemps").style.display = 'block';
+			}
+
+			function hoverJournal()
+			{
+			document.getElementById("journal").style.display = 'none';
+			document.getElementById("hoverJournal").style.display = 'block';
+			}
+
+			function killLink()
+			{
+			document.getElementById("dessin").style.display = 'block';
+			document.getElementById("hoverDessin").style.display = 'none';
+			document.getElementById("temps").style.display = 'block';
+			document.getElementById("hoverTemps").style.display = 'none';
+			document.getElementById("journal").style.display = 'block';
+			document.getElementById("hoverJournal").style.display = 'none';
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<div id="top">
+			<img src="images/topBureau.png" width="2000" height="226">
+		</div>
+
+		<div id="A1">
+			<img src="images/1A.png" width="1422" height="624">
+		</div>
+
+		<div id="dessin" onmouseover="hoverDessin();">
+			<a href="fanart.html"><img src="images/1BDessin.png" width="578" height="624"></a>
+		</div>
+
+		<div id="hoverDessin" onmouseout="killLink();">
+			<a href="fanart.html"><img src="images/dessinHover.png" width="578" height="624"></a>
+		</div>
+
+		<div id="B1">
+			<img src="images/2A.png" width="526" height="152">
+		</div>
+
+		<div id="temps" onmouseover="hoverTemps();">
+			<a href="fanfics.html"><img src="images/2BTemps.png" width="184" height="152"></a>
+		</div>
+
+		<div id="hoverTemps" onmouseout="killLink();">
+			<a href="fanfics.html"><img src="images/tempsHover.png" width="184" height="152"></a>
+		</div>
+
+		<div id="B3">
+			<img src="images/2C.png" width="1290" height="152">
+		</div>
+
+		<div id="C">
+			<img src="images/3.png" width="2000" height="222">
+		</div>
+
+		<div id="D1">
+			<img src="images/4A.png" width="1422" height="276">
+		</div>
+
+		<div id="journal" onmouseover="hoverJournal();">
+			<a href="pressRelease.html"><img src="images/4BJournal.png" width="578" height="276"></a>
+		</div>
+
+		<div id="hoverJournal" onmouseout="killLink();">
+			<a href="pressRelease.html"><img src="images/journalHover.png" width="578" height="276"></a>
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+	<head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=uf-8">
+		<title>The Tavern</title>
+<link rel="shortcut icon" href="images/Favicon.ico">
+		<link rel="icon" type="image/jpg" href="images/Favicon.jpg">
+		<style type="text/css">
+
+			#head 
+			{
+				position:absolute;
+				left:1px;
+				top:1px;
+				width:663px;
+				height:152px;
+				z-index:1;
+			}
+
+			#left 
+			{
+				position:absolute;
+				left:-1px;
+				top:213px;
+				width:169px;
+				height:103px;
+				z-index:2;
+			}
+
+			#man
+			{
+				position:absolute;
+				left:1717px;
+				top:213px;
+				width:171px;
+				height:337px;
+				z-index:4;
+			}
+
+			#hoverMan
+			{
+				position:absolute;
+				left:1717px;
+				top:213px;
+				width:171px;
+				height:3337px;
+				z-index:16;
+				display:none;
+			}
+			 
+			#underHead 
+			{
+				position:absolute;
+				left:167px;
+				top:213px;
+				width:689px;
+				height:78px;
+				z-index:5;
+			}
+
+			#woman 
+			{
+				position:absolute;
+				left:167px;
+				top:307px;
+				width:265px;
+				height:185px;
+				z-index:6;
+			}
+
+			#hoverWoman 
+			{
+				position:absolute;
+				left:167px;
+				top:307px;
+				width:265px;
+				height:185px;
+				z-index:17;
+				display:none;
+			}
+
+			#A 
+			{
+				position:absolute;
+				left:529px;
+				top:307px;
+				width:109px;
+				height:165px;
+				z-index:7;
+			}
+
+			#B1
+			{
+				position:absolute;
+				left:637px;
+				top:307px;
+				width:62px;
+				height:36px;
+				z-index:8;
+			}
+
+			#cat 
+			{
+				position:absolute;
+				left:637px;
+				top:405px;
+				width:63px;
+				height:32px;
+				z-index:9;
+			}
+
+			#hoverCat 
+			{
+				position:absolute;
+				left:637px;
+				top:405px;
+				width:63px;
+				height:32px;
+				z-index:18;
+				display:none;
+			}
+
+			#B3 
+			{
+				position:absolute;
+				left:637px;
+				top:604px;
+				width:79px;
+				height:19px;
+				z-index:10;
+			}
+
+			#C 
+			{
+				position:absolute;
+				left:927px;
+				top:307px;
+				width:85px;
+				height:129px;
+				z-index:11;
+			}
+
+			#barman 
+			{
+				position:absolute;
+				left:1173px;
+				top:307px;
+				width:38px;
+				height:61px;
+				z-index:12;
+			}
+
+			#hoverBarman 
+			{
+				position:absolute;
+				left:1173px;
+				top:307px;
+				width:38px;
+				height:61px;
+				z-index:19;
+				display:none;
+			}
+
+			#D2 
+			{
+				position:absolute;
+				left:1173px;
+				top:605px;
+				width:141px;
+				height:52px;
+				z-index:15;
+			}
+
+			#E 
+			{
+				position:absolute;
+				left:1419px;
+				top:307px;
+				width:121px;
+				height:75px;
+				z-index:14;
+			}
+
+			#foot 
+			{
+				position:absolute;
+				left:-1px;
+				top:1343px;
+				width:116px;
+				height:37px;
+				z-index:3;
+			}
+
+		</style>
+
+		<script>
+
+			function hoverMan()
+			{
+				document.getElementById("man").style.display = 'none';
+				document.getElementById("hoverMan").style.display = 'block';
+			}
+
+			function hoverWoman()
+			{
+				document.getElementById("woman").style.display = 'none';
+				document.getElementById("hoverWoman").style.display = 'block';
+			}
+
+			function hoverCat()
+			{
+				document.getElementById("cat").style.display = 'none';
+				document.getElementById("hoverCat").style.display = 'block';
+			}
+
+			function hoverBarman()
+			{
+				document.getElementById("barman").style.display = 'none';
+				document.getElementById("hoverBarman").style.display = 'block';
+			}
+
+			function killLink()
+			{
+				document.getElementById("man").style.display = 'block';
+				document.getElementById("hoverMan").style.display = 'none';
+				document.getElementById("woman").style.display = 'block';
+				document.getElementById("hoverWoman").style.display = 'none';
+				document.getElementById("cat").style.display = 'block';
+				document.getElementById("hoverCat").style.display = 'none';
+				document.getElementById("barman").style.display = 'block';
+				document.getElementById("hoverBarman").style.display = 'none';
+			}
+
+		</script>
+
+	</head>
+
+		<body>
+
+		<div id="head">
+			<img src="images/head.png" width="2000" height="212">
+		</div>
+
+		<div id="left">
+			<img src="images/left.png" width="168" height="1132">
+		</div>
+
+		<div id="man" onmouseover="hoverMan();">
+			<a href="trailerMan.html"><img src="images/rightMAN.png" width="282" height="1132"></a>
+		</div>
+
+		<div id="hoverMan" onmouseout="killLink();">
+			<a href="trailerMan.html"><img src="images/hoverMan.png" width="282" height="1132"></a>
+		</div>
+
+		<div id="underHead">
+			<img src="images/topContent.png" width="1550" height="94">
+		</div>
+
+		<div id="woman" onmouseover="hoverWoman();">
+			<a href="trailerWoman.html"><img src="images/leftContentWoman.png" width="362" height="1038"></a>
+		</div>
+
+		<div id="hoverWoman" onmouseout="killLink();">
+			<a href="trailerWoman.html"><img src="images/leftContentWoman-hover.png" width="362" height="1038"></a>
+		</div>
+
+		<div id="A">
+			<img src="images/A.png" width="108" height="1038">
+		</div>
+
+		<div id="B1">
+			<img src="images/B1.png" width="290" height="98">
+		</div>
+
+		<div id="cat" onmouseover="hoverCat();">
+			<a href="trailerCat.html" ><img src="images/B2CAT.png" width="290" height="200"></a>
+		</div>
+
+		<div id="hoverCat" onmouseout="killLink();">
+			<a href="trailerCat.html" ><img src="images/B2CAT-hover.png" width="290" height="200"></a>
+		</div>
+
+		<div id="B3">
+			<img src="images/B3.png" width="290" height="740">
+		</div>
+
+		<div id="C">
+			<img src="images/C.png" width="246" height="1038">
+		</div>
+
+		<div id="barman" onmouseover="hoverBarman();">
+			<a href="trailerBarman.html"><img src="images/D1.png" width="246" height="298"></a>
+		</div>
+
+		<div id="hoverBarman" onmouseout="killLink();">
+			<a href="trailerBarman.html"><img src="images/D1-hover.png" width="246" height="298"></a>
+		</div>
+
+		<div id="D2">
+			<img src="images/D2.png" width="246" height="896">
+		</div>
+
+		<div id="E">
+			<img src="images/E.png" width="298" height="1038">
+		</div>
+
+		<div id="foot">
+			<img src="images/foot.png" width="2000" height="156">
+		</div>
+
+	</body>
+
+</html>
